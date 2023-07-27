@@ -1,17 +1,13 @@
 :root {
-	--brand-color: #4d5ae5;
-	--snow: white;
-	--almost-black: #2E2F42;
-	--mouse: #757575;
-	--almost-white: #f5f4fa;
-	--dark-grey: #2f303a;
-	--light: #ececec;
+	--company-color: #4d5ae5;
+	--main-color: white;
+	--text-color: #2e2f42;
 }
 
 body {
 	font-family: Roboto, sans-serif;
 	color: #434455;
-	background-color: #FFF;
+	background-color: #fff;
 	margin: 0 auto;
 }
 
@@ -28,39 +24,44 @@ h4 {
 	margin: 0 auto;
 }
 
-section {
-	padding-block: 120px;
+.links {
+	border: #e7e9fc solid 1px;
 }
 
-
-.logo-dark {
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 72px;
+}
+.logo-second-part {
 	font-family: raleway;
-	color: var(--almost-black);
+	color: #2e2f42;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 21px;
+	line-height: 1.6;
 	letter-spacing: 0.54px;
 	vertical-align: top;
 	text-align: left;
 }
-.logo-light {
-	font-family: raleway;
-	color: var(--snow);
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: 800;
-	line-height: 21px;
-	letter-spacing: 0.54px;
-	vertical-align: top;
-	text-align: left;
-	padding-left: 200px;
+
+.logo {
+	color: var(--company-color);
 }
-.logo-part {
-	color: var(--brand-color);
+
+.nav-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+	max-width: 261px;
+	margin-left: 76px;
+	margin-right: 332px;
 }
+
 .link {
-	color: var(--almost-black);
+	color: var(--text-color);
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: 500;
@@ -72,27 +73,41 @@ section {
 .link:hover,
 .link:focus,
 .link:active {
-	color: var(--brand-color);
+	color: var(--company-color);
 }
-.background {
+
+.address-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.link-color {
+	color: #434455;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+}
+
+.main-section {
 	background-color: #2e2f42;
-	padding: 200px 252px 200px 252px;
+	padding: 188px 472px 188px 472px;
 }
-.background-bottom {
-	background-color: #2E2F42;
-	margin: 0 auto;
-	height: 192px;
-	padding-top: 60px;
-}
-.container-black {
+
+.container-background {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.text-content {
-	color: var(--snow);
+
+.main-section-title {
+	color: var(--main-color);
 	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.07;
@@ -100,14 +115,13 @@ section {
 	text-align: center;
 	width: 496px;
 }
-.order-service {
-	background-color: #F4F4FD;
-	border: var(--brand-color);
+
+.order-btn {
+	background-color: #f4f4fd;
+	border: var(--company-color);
 	border-radius: 4px;
 	color: #4d5ae5;
 	cursor: pointer;
-	width: 200px;
-	gap: 10px;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
@@ -116,22 +130,33 @@ section {
 	text-align: center;
 	padding: 16px 32px 16px 32px;
 }
-.order-service:hover,
-.order-service:focus{
-	background-color: #4D5AE5;
-    color:#FFFFFF;
+.order-btn:hover,
+.order-btn:focus {
+	background-color: #4d5ae5;
+	color: #ffffff;
+}
+
+.card-set {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	gap: 24px;
+}
+.item {
+	background-color: var(--main-color);
+	gap: 24px;
 }
 .title-style {
 	font-size: 20px;
-	font-weight: 500px;
+	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 0.4px;
 	vertical-align: top;
 	text-align: left;
 }
-.text-style {
+.description {
 	font-family: roboto;
-	color: var(--mouse);
+	color: #434455;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -139,8 +164,9 @@ section {
 	vertical-align: top;
 	text-align: left;
 }
-.specialty {
-	color: #2E2F42;
+
+.third-section {
+	color: #2e2f42;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.11;
@@ -148,60 +174,87 @@ section {
 	vertical-align: top;
 	text-align: center;
 	padding-bottom: 72px;
-
 }
-.grey {
-	background-color: #F4F4FD;
+
+.third-section-pics {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	padding: 0;
+}
+
+.team-member-list {
+	color: #2e2f42;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.11;
+	letter-spacing: 0.72px;
+	vertical-align: top;
+	text-align: center;
+	padding-bottom: 72px;
+}
+
+.team-section {
+	background-color: #f4f4fd;
 	margin: 0 auto;
 }
-.name {
-	font-size: 16px;
+
+.team-name {
+	font-size: 20px;
 	font-weight: 500;
-	line-height: 1, 2;
-	letter-spacing: 3%;
+	line-height: 1.2;
+	letter-spacing: 0.4px;
 	vertical-align: top;
 	text-align: center;
+	padding-top: 32px;
+	padding-bottom: 8px;
 }
-.position {
-	color: var(--mouse);
+.team-name-description {
+	color: #434455;
 	font-size: 16px;
-	line-height: 1, 2;
-	letter-spacing: 3%;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
 	vertical-align: top;
 	text-align: center;
-}
-.address-style {
-	color: var(--snow);
-	text-decoration: none;
-	font-size: 14px;
-	line-height: 1, 7;
-	letter-spacing: 3%;
-	vertical-align: top;
-	text-align: left;
-	padding-top: 20px;
-	width: 246px;
-	padding-left: 200px;
-}
-.link-footer {
-	color: var(--snow);
-	text-decoration: none;
-	font-size: 14px;
-	line-height: 1, 7;
-	letter-spacing: 3%;
-	vertical-align: top;
-	text-align: left;
-	padding-left: 200px;
-}
-.link-footer:hover,
-.link-footer:focus,
-.link-footer:active {
-	color: var(--brand-color);
+	padding-bottom: 32px;
 }
 
-.button-design {
-	background-color: #F4F4FD;
-	color: var(--brand-color);
-	border: var(--almost-white);
+.footer-background {
+	background-color: #2e2f42;
+	margin: 0 auto;
+	height: 312px;
+	padding-top: 101.5px;
+}
+
+.logo-footer {
+	font-family: raleway;
+	color: var(--main-color);
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 21px;
+	letter-spacing: 0.54px;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 156px;
+}
+.footer-text {
+	color: var(--main-color);
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
+	vertical-align: top;
+	text-align: left;
+	padding-top: 17.5px;
+	width: 264px;
+	padding-left: 156px;
+}
+
+.filter-button {
+	background-color: #f4f4fd;
+	color: var(--company-color);
+	border: #e7e9fc;
 	cursor: pointer;
 	width: 114px;
 	height: 38px;
@@ -214,19 +267,21 @@ section {
 	text-align: center;
 	border-radius: 4px;
 }
-.button-design:hover,
-.button-design:focus,
-.button-design:active {
-	color: var(--snow);
-	background-color: var(--brand-color);
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+	color: var(--main-color);
+	background-color: var(--company-color);
 }
-.project-name {
+.new-section {
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 0.4px;
 	vertical-align: top;
 	text-align: left;
+	padding-top: 32px;
+	padding-bottom: 8px;
 }
 .project-type {
 	color: #434455;
@@ -236,76 +291,21 @@ section {
 	letter-spacing: 0.32px;
 	vertical-align: top;
 	text-align: left;
+	padding-bottom: 32px;
 }
-.flex-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 72px;
-}
-.bottom-line {
-	border: var(--light) solid 1px;
-}
-.flex-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 40px;
-	max-width: 261px;
-	margin-left: 76px;
-	margin-right: 332px;
-}
-.flex-adress {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 50px;
-}
-.link-color {
-	color: #434455;
-	font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.32px;
 
-}
 .container {
 	width: 1158px;
 	margin: 0 auto;
-}
-.card-set {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	gap: 24px;
-}
-.item {
-	background-color: var(--snow);
-gap: 24px;
+	padding: 0 15px;
 }
 
-.specialty-pics {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-	padding: 0;
-}
-.specialty-pics:last-child {
-	margin: unset;
-}
-
-.frame {
-	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-	padding: 0;
-}
 .menu {
 	display: flex;
 	justify-content: center;
 	gap: 24px;
 	padding-bottom: 72px;
+	padding-top: 96px;
 }
 .button-item {
 	justify-content: space-between;
@@ -315,15 +315,17 @@ gap: 24px;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 30px;
+	gap: 24px;
+	margin: 0px;
+	padding-bottom: 120px;
 }
 .bottom-frame {
-	padding-left: 24px;
-	border: 1px solid var(--light);
+	padding-left: 16px;
+	border: 1px solid #e7e9fc;
 	border-top: none;
 }
 
-.section{
+.section {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
