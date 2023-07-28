@@ -8,12 +8,12 @@ body {
 	font-family: Roboto, sans-serif;
 	color: #434455;
 	background-color: #fff;
-	margin: 0 auto;
 }
 
 ul {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 }
 
 h3 {
@@ -25,12 +25,15 @@ h4 {
 }
 
 .links {
-	border: #e7e9fc solid 1px;
+	border-bottom: #e7e9fc solid 1px;
+}
+
+p {
+	margin: 0;
 }
 
 .flex-container {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	height: 72px;
 }
@@ -53,11 +56,12 @@ h4 {
 .nav-button {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+
 	gap: 40px;
-	max-width: 261px;
+}
+
+.nav-section {
 	margin-left: 76px;
-	margin-right: 332px;
 }
 
 .link {
@@ -79,10 +83,12 @@ h4 {
 .address-info {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	gap: 40px;
 }
 
+.address-section {
+	margin-left: auto;
+}
 .link-color {
 	color: #434455;
 	font-family: Roboto;
@@ -95,7 +101,8 @@ h4 {
 
 .main-section {
 	background-color: #2e2f42;
-	padding: 188px 472px 188px 472px;
+	padding: 188px 0;
+	text-align: center;
 }
 
 .container-background {
@@ -114,32 +121,34 @@ h4 {
 	letter-spacing: 1.12px;
 	text-align: center;
 	width: 496px;
+	margin: 0 auto;
+	margin-bottom: 48px;
 }
 
 .order-btn {
-	background-color: #f4f4fd;
+	font-family: roboto;
+	background-color: var(--company-color);
 	border: var(--company-color);
 	border-radius: 4px;
-	color: #4d5ae5;
+	color: #ffffff;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.64px;
-	vertical-align: top;
 	text-align: center;
 	padding: 16px 32px 16px 32px;
 }
 .order-btn:hover,
 .order-btn:focus {
-	background-color: #4d5ae5;
+	border-radius: 4px;
+	background-color: #404bbf;
 	color: #ffffff;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .card-set {
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
 	gap: 24px;
 }
 .item {
@@ -151,18 +160,14 @@ h4 {
 	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 0.4px;
-	vertical-align: top;
-	text-align: left;
+	margin-bottom: 8px;
 }
 .description {
-	font-family: roboto;
 	color: #434455;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
-	letter-spacing: 0.32px;
-	vertical-align: top;
-	text-align: left;
+	margin: 0;
 }
 
 .third-section {
@@ -174,6 +179,10 @@ h4 {
 	vertical-align: top;
 	text-align: center;
 	padding-bottom: 72px;
+}
+
+.doing-list {
+	padding-top: 0px;
 }
 
 .third-section-pics {
@@ -234,21 +243,16 @@ h4 {
 	font-weight: 800;
 	line-height: 21px;
 	letter-spacing: 0.54px;
-	vertical-align: top;
-	text-align: left;
-	padding-left: 156px;
 }
 .footer-text {
 	color: var(--main-color);
 	text-decoration: none;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 24px;
 	letter-spacing: 0.32px;
-	vertical-align: top;
 	text-align: left;
 	padding-top: 17.5px;
 	width: 264px;
-	padding-left: 156px;
 }
 
 .filter-button {
@@ -302,6 +306,7 @@ h4 {
 
 .menu {
 	display: flex;
+
 	justify-content: center;
 	gap: 24px;
 	padding-bottom: 72px;
@@ -328,4 +333,8 @@ h4 {
 .section {
 	padding-top: 120px;
 	padding-bottom: 120px;
+}
+
+.doing-list {
+	padding-top: 0px;
 }
