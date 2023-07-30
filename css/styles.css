@@ -135,12 +135,13 @@ p {
 	line-height: 1.07;
 	letter-spacing: 1.12px;
 	text-align: center;
-	width: 496px;
+	max-width: 496px;
 	margin: 0 auto;
 	margin-bottom: 48px;
 }
 
 .order-btn {
+
 	font-family: roboto;
 	background-color: var(--company-color);
 	border: var(--company-color);
@@ -153,6 +154,7 @@ p {
 	letter-spacing: 0.64px;
 	text-align: center;
 	padding: 16px 32px 16px 32px;
+	min-width: 169px;
 }
 .order-btn:hover,
 .order-btn:focus {
@@ -169,6 +171,7 @@ p {
 .item {
 	background-color: var(--main-color);
 	gap: 24px;
+	width: calc((100% - 72px) / 4);
 }
 .title-style {
 	font-size: 20px;
