@@ -40,6 +40,7 @@ p {
 }
 
 .links {
+	display: flex ;
 	border-bottom: #e7e9fc solid 1px;
 }
 
@@ -258,7 +259,7 @@ list-style-type: none;
 }
 
 .team {
-	padding: 32px 16px;
+	padding: 32px 16px 32px;
 }
 
 .mark{
