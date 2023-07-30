@@ -353,15 +353,7 @@ margin: 0 auto;
 	background-color: var(--company-color);
 	border: 1px solid transparent;
 }
-.new-section-list {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 1.2;
-	letter-spacing: 0.4px;
-	vertical-align: top;
-	text-align: left;
-	margin-bottom: 8px;
-}
+
 .project-type {
 	color: #434455;
 	font-size: 16px;
@@ -408,3 +400,13 @@ margin: 0 auto;
 .doing-list {
 	padding-top: 0px;
 }
+
+.bottom-frame h3{
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.2;
+		letter-spacing: 0.4px;
+		vertical-align: top;
+		text-align: left;
+		margin-bottom: 8px;
+	}
