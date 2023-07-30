@@ -180,6 +180,11 @@ list-style-type: none;
 	width: calc((100% - 48px) / 3);
 }
 
+.project-image-caption {
+	text-align: start;
+	width: calc((100% - 48px) / 3);
+  }
+
 .card-set {
 	display: flex;
 	gap: 24px;
