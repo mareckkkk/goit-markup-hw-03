@@ -79,7 +79,7 @@ p {
 text-decoration: none;
 list-style-type: none;
 	gap: 40px;
-	padding: 24px 0,
+	padding: 24px 0;
 }
 
 .portfolio-container {
@@ -278,7 +278,7 @@ margin: 0 auto;
 }
 
 .team {
-	padding: 32px 16px;
+	padding: 32px 16px 32px
 }
 
 .mark{
@@ -353,7 +353,15 @@ margin: 0 auto;
 	background-color: var(--company-color);
 	border: 1px solid transparent;
 }
-
+.new-section-list {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0.4px;
+	vertical-align: top;
+	text-align: left;
+	margin-bottom: 8px;
+}
 .project-type {
 	color: #434455;
 	font-size: 16px;
@@ -400,13 +408,3 @@ margin: 0 auto;
 .doing-list {
 	padding-top: 0px;
 }
-
-.bottom-frame h3{
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 1.2;
-		letter-spacing: 0.4px;
-		vertical-align: top;
-		text-align: left;
-		margin-bottom: 8px;
-	}
