@@ -296,7 +296,7 @@ p {
 .filter-button {
 	background-color: #f4f4fd;
 	color: var(--company-color);
-	border: #e7e9fc;
+	border: 1px solid #e7e9fc;
 	cursor: pointer;
 	text-decoration: none;
 	font-weight: 500;
@@ -313,6 +313,7 @@ p {
 .filter-button:active {
 	color: var(--main-color);
 	background-color: var(--company-color);
+	border: 1px solid transparent;
 }
 .new-section {
 	font-size: 20px;
