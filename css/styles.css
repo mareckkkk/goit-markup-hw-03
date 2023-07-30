@@ -111,11 +111,13 @@ list-style-type: none;
 	display: flex;
 	align-items: center;
 	gap: 40px;
+
 }
 
 .address-section {
-	margin-left: auto;
 	display: flex;
+	margin-left: auto;
+	
 }
 .link-color {
 	color: #434455;
@@ -154,7 +156,7 @@ list-style-type: none;
 }
 
 .order-btn {
-
+display: inline-block;
 	font-family: roboto;
 	background-color: var(--company-color);
 	border: var(--company-color);
