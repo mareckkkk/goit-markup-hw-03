@@ -215,6 +215,7 @@ list-style-type: none;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	padding: 0;
+	gap: 24px;
 }
 
 .team-member-list {
