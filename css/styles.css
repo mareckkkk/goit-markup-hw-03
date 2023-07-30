@@ -79,6 +79,11 @@ list-style-type: none;
 	padding: 24px 0,
 }
 
+.portfolio-container {
+	padding-top: 96px;
+	padding-bottom: 120px;
+  }
+
 .nav-section {
 	margin-left: 76px;
 	display: flex;
