@@ -40,10 +40,7 @@ p {
 }
 
 .links {
-	display: flex ;
 	border-bottom: #e7e9fc solid 1px;
-	
-padding: 24px 0;
 }
 
 p {
@@ -53,8 +50,6 @@ p {
 .flex-container {
 	display: flex;
 	align-items: center;
-
-	
 }
 .logo-second-part {
 	font-family: raleway;
@@ -76,8 +71,8 @@ p {
 .nav-button {
 	display: flex;
 	align-items: center;
-text-decoration: none;
-list-style-type: none;
+	text-decoration: none;
+	list-style-type: none;
 	gap: 40px;
 	padding: 24px 0;
 }
@@ -85,11 +80,11 @@ list-style-type: none;
 .portfolio-container {
 	padding-top: 96px;
 	padding-bottom: 120px;
-  }
+}
 
 .nav-section {
 	display: flex;
-	margin-left: 76px;
+
 	display: flex;
 	align-items: center;
 }
@@ -104,7 +99,6 @@ list-style-type: none;
 	vertical-align: top;
 	text-align: left;
 	padding: 24px 0;
-	
 }
 .link:hover,
 .link:focus,
@@ -116,13 +110,11 @@ list-style-type: none;
 	display: flex;
 	align-items: center;
 	gap: 40px;
-
 }
 
 .address-section {
 	display: flex;
 	margin-left: auto;
-	
 }
 .link-color {
 	color: #434455;
@@ -161,8 +153,8 @@ list-style-type: none;
 }
 
 .order-btn {
-display: block;
-margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 	font-family: roboto;
 	background-color: var(--company-color);
 	border: var(--company-color);
@@ -185,14 +177,14 @@ margin: 0 auto;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.doing-section{
+.doing-section {
 	width: calc((100% - 48px) / 3);
 }
 
 .project-image-caption {
 	text-align: start;
 	width: calc((100% - 48px) / 3);
-  }
+}
 
 .card-set {
 	display: flex;
@@ -216,6 +208,9 @@ margin: 0 auto;
 	font-weight: 400;
 	line-height: 1.5;
 	margin: 0;
+}
+a .new-section-list {
+	color: #2e2f42;
 }
 
 .third-section {
@@ -259,6 +254,10 @@ margin: 0 auto;
 	margin: 0 auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 .team-name {
 	font-size: 20px;
 	font-weight: 500;
@@ -278,11 +277,11 @@ margin: 0 auto;
 }
 
 .team {
-	padding: 32px 16px 32px
+	padding: 32px 16px 32px 16px;
 }
 
-.mark{
-	border-radius: 0px 0px 4px 4px; 
+.mark {
+	border-radius: 0px 0px 4px 4px;
 }
 
 .footer-background {
@@ -362,6 +361,7 @@ margin: 0 auto;
 	text-align: left;
 	margin-bottom: 8px;
 }
+
 .project-type {
 	color: #434455;
 	font-size: 16px;
